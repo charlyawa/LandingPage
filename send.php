@@ -1,5 +1,6 @@
 <?php
-    $destinatario = 'alvacharly31@gmail.com';
+    $destinatario = 'https://www.facebook.com/';
+    
     $name = $_POST['name'];
     $mail = $_POST['mail'];
     $message = $_POST["message"];
