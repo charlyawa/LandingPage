@@ -1,5 +1,5 @@
 <?php
-    $destinatario = 'https://www.facebook.com/';
+    $destinatario = 'https://github.com/charlyawa';
     
     $name = $_POST['name'];
     $mail = $_POST['mail'];
