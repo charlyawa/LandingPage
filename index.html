@@ -207,18 +207,26 @@
     <div class="contact">
         <h1>Contact me</h1>
 
-        <div class="form">
-            <form action="send.php" method="post">
-                <input type="text" name="name" id="name" class="name" placeholder="Enter your name">
-                <input type="text" name="mail" id="mail" class="mail" placeholder="Enter your e-mail">
-                <textarea name="message" class="message" placeholder="Contact me" id="message"></textarea>
-                <div class="button">
-                    <button type="submit" class="btn btn-primary">Send</button>
+        <form action="send.php">
+            <div class="form">
+                <div class="team">
+                    <input type="text" name="name" id="" required>
+                    <label>Name</label>
                 </div>
-               
-            </form>
-        </div>
+                <div class="team">
+                    <input type="mail" name="mail" id="" required>
+                    <label>Email</label>
+                </div>
+                <div class="team">
+                   <textarea name="message" id="" rows="3" required></textarea>
+                   <label>Message</label>
+                </div>
 
+                <button type="submit">Send</button>
+
+            </div>
+        </form>
+       
     </div>
 
 </body>
