@@ -207,26 +207,31 @@
     <div class="contact">
         <h1>Contact me</h1>
 
-        <form action="send.php" method="POST">
-            <div class="form">
-                <div class="team">
-                    <input type="text" name="name" id="" required>
-                    <label>Name</label>
-                </div>
-                <div class="team">
-                    <input type="mail" name="mail" id="" required>
-                    <label>Email</label>
-                </div>
-                <div class="team">
-                   <textarea name="message" id="" rows="3" required></textarea>
-                   <label>Message</label>
-                </div>
-
-                <button type="submit">Send</button>
-
-            </div>
+        <form class="contact-form">
+            <label for="">Name</label><br>
+            <input class="name" type="text" placeholder="name" required><br>
+            <label for="">Email</label><br>
+            <input class="email" type="email" placeholder="email" required><br>
+            <label for="">Message</label><br>
+            <textarea
+                class="message"
+                name="" 
+                id="" 
+                cols="30" 
+                rows="10"
+                placeholder="message">
+            </textarea>
+            <br>
+            <button type="submit">Submit</button>
         </form>
+
+        <div class="infosResults"></div>
        
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-analytics.js"></script>
+        <script src="app.js"></script>
+
     </div>
 
 </body>
