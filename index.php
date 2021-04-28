@@ -90,7 +90,7 @@
 
 <section class="about_us">
     <a id="me"></a>
-    <h1>About Me</h1>
+    <h1>About</h1>
     <!-----
     <div class="about_us-content">
 
@@ -205,34 +205,29 @@
 
 
     <div class="contact">
-        <h1>Contact me</h1>
+        <h1>Contact</h1>
 
-        <form class="contact-form">
-            <label for="">Name</label><br>
-            <input class="name" type="text" placeholder="name" required><br>
-            <label for="">Email</label><br>
-            <input class="email" type="email" placeholder="email" required><br>
-            <label for="">Message</label><br>
-            <textarea
-                class="message"
-                name="" 
-                id="" 
-                cols="30" 
-                rows="10"
-                placeholder="message">
-            </textarea>
-            <br>
-            <button type="submit">Submit</button>
+        <form method="POST">   
+
+            <input type="text" placeholder="name" name="name">
+            <input type="email" placeholder="email" name="email">
+            <input type="text" placeholder="asunto" name="asunto">
+            <textarea placeholder="mensaje" name="msg"></textarea>
+            <input type="submit" name="enviar">
         </form>
-
-        <div class="infosResults"></div>
        
-        <script src="https://smtpjs.com/v3/smtp.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-analytics.js"></script>
-        <script src="app.js"></script>
-
     </div>
+
+   
+
+        <footer class="footer">
+            <p> &copy;  <b>CarlosSoriano</b> 2021  all right reserved  </p>
+        </footer>
+
+
+<?php
+    echo include("enviar.php")
+?>
 
 </body>
 </html>
